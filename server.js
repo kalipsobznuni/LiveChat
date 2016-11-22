@@ -17,8 +17,8 @@ const httpServer = http.createServer((req, res) => {
 		(_, data) => res.end(data));
     break;
   default: res.end();}
-}); 
+});
 
 httpServer.listen(port, () =>
-		  console.log(`Server started on port:${port}, check localhost:${port}`)
+		  console.log(`Check localhost:${port}`)
 );

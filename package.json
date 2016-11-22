@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Simple JavaScript project",
   "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "ws": "^1.1.1"
@@ -30,9 +33,7 @@
     "webpack": "^1.13.2"
   },
   "scripts": {
-    "compile_front_end": "mkdir -p dist && babel lib --out-dir dist",
-    "bundle_front_end": "webpack --progress --colors dist/homepage.js public/bundle.js",
-    "front_end": "npm run compile_front_end && npm run bundle_front_end"
+    "front-end": "webpack --progress --colors"
   },
   "author": "Kalipso Bznuni",
   "license": "MIT"
